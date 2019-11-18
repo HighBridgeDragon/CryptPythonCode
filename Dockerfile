@@ -3,7 +3,7 @@
 # OS Support also exists for jessie & stretch (slim and full).
 # See https://hub.docker.com/r/library/python/ for all supported Python
 # tags from Docker Hub.
-FROM tensorflow/tensorflow:1.14.0-gpu-py3
+FROM tensorflow/tensorflow:1.10.0-gpu-py3
 
 LABEL Name=cryptpythoncode Version=0.0.1
 
@@ -13,7 +13,7 @@ ADD . /app
 RUN apt update && \
     apt install git -y
 
-# Clone repository
-RUN git clone https://github.com/HighBridgeDragon/CryptPythonCode.git
+COPY ./sampleCode/HelloTensorflow.py ./
+COPY ./requirements.txt ./
 
 RUN python3 -m pip install -r requirements.txt

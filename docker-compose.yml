@@ -8,6 +8,6 @@ services:
       dockerfile: Dockerfile
     working_dir: /app
     volumes:
-      - ./result:/app/sampleCode/dist
+      - ./result:/app/dist
     command: bash ./docker_entry.sh
     tty: true

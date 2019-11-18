@@ -1,5 +1,5 @@
 #!/bin/bash
 
-pyarmor pack -e " --onefile" ./sampleCode/HelloTensorflow.py
+pyarmor pack -e " --onefile" ./HelloTensorflow.py
 
-./sampleCode/dist/HelloTensorflow
+./dist/HelloTensorflow
