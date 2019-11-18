@@ -2,4 +2,4 @@
 
 pyarmor pack -e " --onefile" ./sampleCode/HelloTensorflow.py
 
-.\sampleCode\dist\HelloTensorflow
+./sampleCode/dist/HelloTensorflow
