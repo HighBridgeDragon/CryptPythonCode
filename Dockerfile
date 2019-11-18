@@ -16,4 +16,4 @@ RUN apt update && \
 # Clone repository
 RUN git clone https://github.com/HighBridgeDragon/CryptPythonCode.git
 
-RUN python3 -m pip install -r requirement.txt
+RUN python3 -m pip install -r requirements.txt
