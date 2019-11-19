@@ -1,13 +1,13 @@
-version: '3'
+version: '2.3'
 
 services:
   cryptpythoncode:
     image: cryptpythoncode
+    runtime: nvidia
     build:
       context: .
       dockerfile: Dockerfile
     working_dir: /app
     volumes:
       - ./result:/app/dist
-    command: bash ./docker_entry.sh
     tty: true
